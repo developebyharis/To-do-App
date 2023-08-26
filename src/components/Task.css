@@ -1,0 +1,75 @@
+/* Task.css */
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+    margin-left: 48px;
+    margin-top: 15px;
+
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid #6b6b6b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ 
+}
+  .task.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .editedInput {
+    border: none !important;
+    outline: none !important;
+}
+
+.editedInput:focus {
+    border: none !important;
+}
+
+
+
+  .taskIcon {
+    position: absolute;
+    right: 0; /* Align the element to the right end of its container */
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.doneIcon {
+
+    color: rgb(0, 199, 0);
+    margin-right: 10.5%;
+  
+}
+.saveIcon {
+    color: rgb(0, 199, 0);
+    margin-right: 5%;
+
+}
+
+.editIcon {
+    color: rgb(0, 102, 255);
+    margin-right: 7%;
+}
+.deleteIcon {
+    color: rgb(252, 38, 0);
+    margin-right: 4%;
+}
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .taskIcon {
+        position: relative; /* Change position to relative for smaller screens */
+        right: initial; /* Reset the right property */
+        font-size: 32px; /* Adjust the font size for smaller screens */
+        margin-right: 30px;
+    }
+
+}
